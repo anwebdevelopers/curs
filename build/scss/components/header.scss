@@ -1,0 +1,115 @@
+@import "bourbon";
+@import "components/vars.scss";
+@import "components/normalize.scss";
+//@import "html/libs/owl.carousel/dist/assets/owl.carousel.min";
+
+.header {
+	padding: 30px 0 65px 0;
+	background-color: #fff;
+	background-image: url(../img/header-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center 0;
+	background-size: cover;
+}
+.header__wrapper {
+	@extend .container;
+	@extend .clearfix;
+}
+.header__box {
+	float: right;
+}
+.header__autor {
+	margin: 0 0 40px 0;
+	text-align: center;
+	h2 {
+		font-size: em(36px);
+		margin: 0 0 20px 0;
+		font-weight: 400;
+	}
+	h3 {
+		margin: 0;
+		text-transform: uppercase;
+		font-size: em(24px);
+		color: $main-color;
+		font-weight: 600;
+	}
+}
+.header__title {
+	padding: 55px 0;
+	margin: 0 0 30px 0;
+	text-align: center;
+	color: $main-color;
+	text-transform: uppercase;
+	line-height: 1.2;
+	font-family: 'DINROUNDPROBOLD', sans-serif;
+	background-image: url(../img/header-title-bg.png);
+	background-repeat: no-repeat;
+	background-position: center 0;
+	h1 {
+		margin: 0;
+		font-size: em(48px);
+	}
+}
+.header__text {
+	margin: 0 0 25px 0;
+	text-align: center;
+	font-size: em(24px);
+	color: $main-color;
+	line-height: 1.2;
+	p {
+		margin: 0;
+	}
+}
+.program {
+	padding: 20px 0;
+	background-color: #80548e;
+}
+.program__wrapper {
+	@extend .container;
+	@extend .clearfix;
+}
+.program__item {
+	position: relative;
+	float: left;
+	width: 20%;
+	min-height: 103px;
+	text-align: center;
+	&:before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		width: 1px;
+		background-color: lighten($main-color, 10%);
+	}
+}
+.program__item:last-child {
+	&:after {
+		content: '';
+		position: absolute;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		width: 1px;
+		background-color: lighten($main-color, 10%);
+	}
+}
+.program__item-title {
+	margin: 0 0 5px 0;
+	font-family: 'DINROUNDPROBOLD', sans-serif;
+	font-size: em(21px);
+	font-weight: 600;
+	color: lighten($main-color, 50%);
+
+}
+.program__item-text {
+	padding: 0 20px;
+	font-size: em(16px);
+	text-transform: uppercase;
+	color: #fff;
+	line-height: 1.2;
+	p {
+		margin: 0;
+	}
+}

@@ -1,0 +1,78 @@
+@import "bourbon";
+@import "components/vars.scss";
+@import "components/fonts.scss";
+
+*::-webkit-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*::-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+
+*:-ms-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+	color: #666;
+}
+body input:required:valid,
+body textarea:required:valid {
+	color: #666;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	min-width: 1000px;
+	position: relative;
+	line-height: 1;
+	font-family: Calibri, sans-serif;
+	color: #111;
+	background-color: #fff;
+}
+.container {
+	max-width: 1000px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.hidden {
+	display: none;
+}
+a {
+	outline: none !important;
+}
+
+
+//Custom Styles Here
+@import "components/header.scss";
+@import "components/destiny.scss";
+@import "components/do.scss";
+@import "components/think.scss";
+@import "components/during.scss";
+@import "components/reviews.scss";
+
+//@import "build/scss/components/magnific-popup.scss";
+
+//ALWAYS END
+//@import "components/media.scss";
+
+//Load Libs SASS
+//@import "html/libs/animate/animate.sass";
+//@import "html/libs/superfish/dist/css/superfish";
+//@import "html/libs/font-awesome/scss/font-awesome.scss";
+//@import "html/libs/jQuery.mmenu/dist/css/jquery.mmenu.all";
+//@import "html/libs/magnific-popup/dist/magnific-popup";
